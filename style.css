@@ -52,6 +52,18 @@ section {
     box-sizing: border-box;
 }
 
+#contact h3 {
+    display: inline-block;
+}
+#contact h3 a {
+    display: inline-block;
+    margin-left: 5px;
+}
+#contact img {
+    display: inline-block;
+    width: 50px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
