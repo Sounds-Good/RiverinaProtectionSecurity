@@ -3,65 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="At Riverina Protection Security, your safety is our priority. We tailor security solutions to your specific needs, offering personalized service and support to ensure your complete satisfaction.">
+    <meta name="description" content="Your trusted security firm providing comprehensive security solutions.">
+    <meta name="keywords" content="security, protection, surveillance, guards, alarms, safety">
     <link rel="stylesheet" href="style.css">
-    <title>Riverina Protection Security</title>
-    <style>
-
-    </style>
+    <title>Riverina Protection Security - Your Security Partner</title>
 </head>
 <body>
 
-    <header>
-        <h1>Riverina Protection Security</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="home">
+        <img src="media/logo/RPSlogo.jpg" alt="Riverina Protection Securitry" width="200px">
 
-    <section>
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Home Security</h3>
-                <p>Protect your family and belongings with our advanced home security systems.</p>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slideshow" class="container">
+            <div class="frosted-text">
+                <h2 >Your Safety is Our Priority</h2>
+                <p>Riverina Protection Services provides cutting-edge security solutions for homes and businesses.</p>
             </div>
-            <div class="service">
-                <h3>Business Security</h3>
-                <p>Safeguard your business with our comprehensive security solutions.</p>
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="media/stock photos/event security.jpg">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="media/stock photos/night club security.jpg">
+              </div>
+        
+              <div class="mySlides fade">
+                <img src="media/stock photos/Patroling Security.jpg">
+              </div>  
+        
+    
             </div>
-            <div class="service">
-                <h3>Surveillance Systems</h3>
-                <p>Monitor your property with our state-of-the-art surveillance systems.</p>
+            <br>
+        
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>  
+        
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Static Security</li>
+            <li>Patrolling Securitry</li>
+            <li>Alarm Response</li>
+            <li>Crowd Contol</li>
+            <li>Construction & Gatehouse</li>
+        </ul>
     </section>
 
-    <section id="#about">
-        <div>
-            <h2>About us</h2>
-            <p>At Riverina Protection Security, your safety is our priority. We tailor security solutions to your specific needs, offering personalized service and support to ensure your complete satisfaction.</p>
-        </div>
+    <section id="about">
+        <h2>About Riverina Protection Security</h2>
+        <p>Riverina Protection security is a leader in the security industry. 
+            We are committed to providing reliable and effective security solutions tailored to your specific needs.</p>
     </section>
+
     <section id="contact">
-        <div>
-            <h2>Contact Us</h2>
-            <h3>Email: <p><a class="contactcontent" href="mailto:contact@riverinaprotectionsecurity.com.au">contact@riverinaprotectionsecurity.com.au</a></p> </h3>
-            <h3>Phone: <p><a class="contactcontent" href="tel:+61459216468">0459 216 468</a></p></h3>
-            <h3>Phone: <p><a class="contactcontent" href="tel:+61458621816"> 0458 621 816</a></p>
-            <a href="https://www.facebook.com/profile.php?id=61565800506678"><img src="media/socialmedialogos/Facebook Brand Asset Pack/Logo/Primary Logo/Facebook_Logo_Primary.png" alt="Facebook logo"></a>
-            </h3>
-            <p></p>
-        </div>
+        <h2>Contact Us</h2>
+        <p>Phone:<a href="tel:+61480119399">0480 119 399</a></p>
+        <p>Phone:<a href="tel:+61411748106">0411 748 106</a></p>
+        <p>Email:<a href="mailto:contact@riverinaprotectionsecurity.com.au">contact@riverinaprotectionsecurity.com.au</a></p>
     </section>
+
     <footer>
         <p>&copy; 2023 Riverina Protection Security</p>
     </footer>
 
+    <script src="slideshow.js"></script>
 </body>
 </html>

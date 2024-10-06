@@ -1,75 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: black;
+    color: white;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: orange;
+    color: black;
     text-align: center;
-}
-
-h1 {
-    margin: 0;
+    padding: 1em 0;
 }
 
 nav ul {
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 1em;
 }
 
 nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
 section {
-    padding: 20px;
+    padding: 2em;
+    margin: 0 10%;
+}
+
+#home {
     text-align: center;
+}
+
+#services {
+    background-color: #111;
+}
+
+#about {
+    background-color: #222;
+}
+
+#contact {
+    background-color: #111;
+}
+#contact a {
+    color: orange;
+    text-decoration: none;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflowing images */
 }
 
-.service {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    box-sizing: border-box;
+.frosted-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: orange;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-#contact h3 {
-    display: inline-block;
-}
-#contact h3 a {
-    display: inline-block;
-    margin-left: 5px;
-}
-#contact img {
-    display: inline-block;
-    width: 50px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+.slideshow-container {
+    height: 500px;
+    position: relative;
     width: 100%;
 }
+
+.mySlides {
+  display: none; 
+}
+
+#slideshow img {
+  width: 40vw; /* Make all images take up full container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+}
+
+.mySlides {
+  display: block; /* Make all slides visible initially */
+  position: absolute; /* Position slides absolutely */
+  width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; /* Adjust transition duration */
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateX(100%); } /* Slide in from right */
+  to { opacity: 1; transform: translateX(0); }
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: orange;
+    color: black;
+}
+
+@media (max-width: 768px) { 
+    #slideshow img {
+      width: 90vw; 
+    }
+  
+    section {
+      margin: 0 5%; 
+    }
+  }
