@@ -26,3 +26,5 @@ function showSlide() {
 }
 
 showSlide(); // Start the carousel
+  
+
