@@ -3,15 +3,18 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 
 header {
     background-color: orange;
-    color: black;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.1em
+}
+header nav h1 {
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -30,89 +33,159 @@ nav a {
 }
 
 section {
-    padding: 2em;
+    padding: 1em;
     margin: 0 10%;
 }
 
 #home {
     text-align: center;
+    padding: 0;
 }
 
 #services {
-    background-color: #111;
+  background-color: #111;
+  text-align: center; 
+  padding: 2em; 
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+  gap: 20px; /* Adjust spacing between columns */
+}
+
+.services-grid > li { /* Style the list items within the grid */
+  list-style-type: none;
+  padding: 15px; /* Add some padding to each service box */
+  background-color: #222; /* Example background color */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  text-align: left;
+}
+.services-grid > div {  /* Target the direct div children of .services-grid */
+  list-style-type: none;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 5px; 
+  text-align: center;     /* Center the text within each grid item */
+}
+
+.services-grid > div > ul {  /* Target the ul within each grid item */
+  text-align: left;     /* Align the list items back to the left */
+}
+#services ul {
+  list-style-type:disc;
+  padding: 0;
+  padding-left: 1em;
+  margin: 0;
+  text-align: center; /* Align the text within the list to the left */
+}
+
+#services li {
+  margin-bottom: 20px; /* Add spacing between service categories */
+}
+
+#services h3 {
+  color: orange; /* Example: Highlight the service titles */
+  margin-bottom: 10px; 
+}
+
+#services p {
+  line-height: 1.6; /* Improve readability of the descriptions */
+}
+
+/* Style the nested lists */
+#services li ul {
+  list-style-type: disc; /* Use default bullet points for the nested lists */
+  padding-left: 40px; /* Indent the nested lists */
+}
+
+#services li li {
+  margin-bottom: 5px; /* Add spacing between nested list items */
 }
 
 #about {
     background-color: #222;
+    text-align: center; /* Added this line */
+}
+#about p {
+  margin: 0 auto;
+  max-width: 50%;
 }
 
 #contact {
     background-color: #111;
+    text-align: center; /* Added this line */
 }
+
 #contact a {
     color: orange;
     text-decoration: none;
 }
-
-.container {
+.carousel {
   position: relative;
-  width: 100%; /* Adjust as needed */
-  height: auto;
+  width: 100%;
+  height: 500px; /* Adjust as needed */
   margin: 0 auto;
-  overflow: hidden; /* Hide overflowing images */
+  overflow: hidden;
 }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hide all items initially */
+  object-fit: cover;
+}
 .frosted-text {
   position: absolute;
-  top: 50%;
+  bottom: 20px; /* Adjust position as needed */
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure text is on top of the image */
   text-align: center;
-  color: orange;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  color: white; /* Text color */
+  font-weight: bold;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.4); /* Frosted background */
+  backdrop-filter: blur(10px); /* Adjust blur intensity */
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
-.slideshow-container {
-    height: 500px;
-    position: relative;
-    width: 100%;
+.carousel-item.active {
+  display: block; /* Show the active item */
+  animation: slideIn 1.5s ease-in-out; /* Apply slide-in animation */
 }
 
-.mySlides {
-  display: none; 
+.carousel-item.prev {
+  animation: slideOut 1.5s ease-in-out; /* Apply slide-out animation */
 }
 
-#slideshow img {
-  width: 40vw; /* Make all images take up full container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.slideshow-container {
+.carousel-item img {
   width: 100%;
-  position: relative;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the entire area */
 }
 
-.mySlides {
-  display: block; /* Make all slides visible initially */
-  position: absolute; /* Position slides absolutely */
-  width: 100%;
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s; /* Adjust transition duration */
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
 }
 
-@keyframes fade {
-  from { opacity: 0; transform: translateX(100%); } /* Slide in from right */
-  to { opacity: 1; transform: translateX(0); }
-}
 footer {
     text-align: center;
     padding: 1em 0;
@@ -122,10 +195,10 @@ footer {
 
 @media (max-width: 768px) { 
     #slideshow img {
-      width: 90vw; 
+        width: 90vw; 
     }
-  
+    
     section {
-      margin: 0 5%; 
+        margin: 0 5%; 
     }
-  }
+}
