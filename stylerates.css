@@ -14,7 +14,6 @@ body {
  40px 40px; /* Increased size */
   background-position: 0 0, 0 20px, 20px -20px, -20px 0px; /* Adjusted position */
 }
-
 header {
     background-color: orange;
     text-align: center;
@@ -34,7 +33,6 @@ section {
 #home {
     padding: 0;
 }
-
 #services {
   background-color: #111;
   text-align: center; 
@@ -50,7 +48,6 @@ section {
   grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
   gap: 20px; /* Adjust spacing between columns */
 }
-
 .services-grid > li { /* Style the list items within the grid */
   list-style-type: none;
   padding: 15px; /* Add some padding to each service box */
@@ -65,7 +62,6 @@ section {
   border-radius: 5px; 
   text-align: center;     /* Center the text within each grid item */
 }
-
 .services-grid > div > ul {  /* Target the ul within each grid item */
   text-align: left;     /* Align the list items back to the left */
 }
@@ -76,30 +72,24 @@ section {
   margin: 0;
   text-align: center; /* Align the text within the list to the left */
 }
-
 #services li {
   margin-bottom: 20px; /* Add spacing between service categories */
 }
-
 #services h3 {
   color: orange; /* Example: Highlight the service titles */
   margin-bottom: 10px; 
 }
-
 #services p {
   line-height: 1.6; /* Improve readability of the descriptions */
 }
-
 /* Style the nested lists */
 #services li ul {
   list-style-type: disc; /* Use default bullet points for the nested lists */
   padding-left: 40px; /* Indent the nested lists */
 }
-
 #services li li {
   margin-bottom: 5px; /* Add spacing between nested list items */
 }
-
 #about {
     background-color: #222;
     text-align: center; /* Added this line */
@@ -108,12 +98,10 @@ section {
   margin: 0 auto;
   max-width: 50%;
 }
-
 #contact {
     background-color: #111;
     text-align: center; /* Added this line */
 }
-
 #contact a {
     color: orange;
     text-decoration: none;
@@ -125,13 +113,11 @@ section {
   margin: 0 auto;
   overflow: hidden;
 }
-
 .carousel-inner {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 .carousel-item {
   position: absolute;
   top: 0;
@@ -157,48 +143,39 @@ section {
   border-radius: 5px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
-
 .carousel-item.active {
   display: block; /* Show the active item */
   animation: slideIn 1.5s ease-in-out; /* Apply slide-in animation */
 }
-
 .carousel-item.prev {
   animation: slideOut 1.5s ease-in-out; /* Apply slide-out animation */
 }
-
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure images cover the entire area */
 }
-
 @keyframes slideIn {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
 }
-
 @keyframes slideOut {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
-
 footer {
     text-align: center;
     padding: .1em 0;
     background-color: orange;
     margin: 0 10%;
-}
-footer a {
+}footer a {
   text-decoration: none;
   color: white;
 }
-
 @media (max-width: 768px) { 
     #slideshow img {
         width: 90vw; 
-    }
-    
+    } 
     section {
         margin: 0 5%; 
     }

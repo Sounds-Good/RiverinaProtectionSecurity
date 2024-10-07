@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
   font-family: 'Roboto', sans-serif;  /* Use Roboto, and fall back to a generic sans-serif if Roboto isn't available */
   margin: 0;
@@ -14,12 +13,10 @@ body {
  40px 40px; /* Increased size */
   background-position: 0 0, 0 20px, 20px -20px, -20px 0px; /* Adjusted position */
 }
-
 header {
     background-color: orange;
     text-align: center;
     padding: 0.1em;
-
 }
 header nav h1 {
     font-weight: bolder;
@@ -29,11 +26,9 @@ section {
     padding: 1em;
     margin: 0 10%;
 }
-
 #home {
     padding: 0;
 }
-
 #services {
   background-color: #111;
   text-align: center; 
@@ -49,7 +44,6 @@ section {
   grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
   gap: 20px; /* Adjust spacing between columns */
 }
-
 .services-grid > li { /* Style the list items within the grid */
   list-style-type: none;
   padding: 15px; /* Add some padding to each service box */
@@ -64,7 +58,6 @@ section {
   border-radius: 5px; 
   text-align: center;     /* Center the text within each grid item */
 }
-
 .services-grid > div > ul {  /* Target the ul within each grid item */
   text-align: left;     /* Align the list items back to the left */
 }
@@ -75,44 +68,35 @@ section {
   margin: 0;
   text-align: center; /* Align the text within the list to the left */
 }
-
 #services li {
   margin-bottom: 20px; /* Add spacing between service categories */
 }
-
 #services h3 {
   color: orange; /* Example: Highlight the service titles */
   margin-bottom: 10px; 
 }
-
 #services p {
   line-height: 1.6; /* Improve readability of the descriptions */
 }
-
-/* Style the nested lists */
 #services li ul {
   list-style-type: disc; /* Use default bullet points for the nested lists */
   padding-left: 40px; /* Indent the nested lists */
 }
-
 #services li li {
   margin-bottom: 5px; /* Add spacing between nested list items */
 }
-
 #about {
     background-color: #222;
-    text-align: center; /* Added this line */
+    text-align: center; 
 }
 #about p {
   margin: 0 auto;
   max-width: 50%;
 }
-
 #contact {
     background-color: #111;
-    text-align: center; /* Added this line */
+    text-align: center; 
 }
-
 #contact a {
     color: orange;
     text-decoration: none;
@@ -123,17 +107,15 @@ section {
 .carousel {
   position: relative;
   width: 100%;
-  height: 500px; /* Adjust as needed */
+  height: 500px; 
   margin: 0 auto;
   overflow: hidden;
 }
-
 .carousel-inner {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 .carousel-item {
   position: absolute;
   top: 0;
@@ -159,32 +141,26 @@ section {
   border-radius: 5px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
-
 .carousel-item.active {
   display: block; /* Show the active item */
   animation: slideIn 1.5s ease-in-out; /* Apply slide-in animation */
 }
-
 .carousel-item.prev {
   animation: slideOut 1.5s ease-in-out; /* Apply slide-out animation */
 }
-
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure images cover the entire area */
 }
-
 @keyframes slideIn {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
 }
-
 @keyframes slideOut {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
-
 footer {
     text-align: center;
     padding: .1em 0;
@@ -195,7 +171,6 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
 /* For tablets and smaller landscape screens */
 @media (max-width: 768px) {
   .services-grid {
@@ -205,13 +180,11 @@ footer a {
     font-size: 0.9em; /* Slightly smaller text */
   }
 }
-
 @media (max-width: 768px) { 
   .services-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
   }
 }
-
 @media (max-width: 480px) {
   .services-grid {
     grid-template-columns: 1fr; /* 1 column on phones */
