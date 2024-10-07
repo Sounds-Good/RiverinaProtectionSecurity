@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: rgb(20, 20, 20);
-    color: white;
+  font-family: 'Roboto', sans-serif;  /* Use Roboto, and fall back to a generic sans-serif if Roboto isn't available */
+  margin: 0;
+  background-color: black;
+  color: white;
 }
 
 header {
