@@ -155,6 +155,11 @@ section {
   height: 100%;
   object-fit: cover; /* Ensure images cover the entire area */
 }
+.pricing {
+  align-items: center;
+  background-color: #222;
+  list-style-type: none;
+}
 @keyframes slideIn {
   from { transform: translateX(100%); }
   to { transform: translateX(0); }
