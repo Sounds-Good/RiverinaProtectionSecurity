@@ -171,6 +171,14 @@ footer a {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 1400px) {
+
+  .services-grid {
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
 /* For tablets and smaller landscape screens */
 @media (max-width: 768px) {
   .services-grid {

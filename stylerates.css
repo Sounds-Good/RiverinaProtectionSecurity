@@ -155,10 +155,17 @@ section {
   height: 100%;
   object-fit: cover; /* Ensure images cover the entire area */
 }
-.pricing {
-  align-items: center;
-  background-color: #222;
+#rates ul li {
   list-style-type: none;
+  
+
+}
+.pricing {
+  list-style-type: none;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 5px; 
+  text-align: center;  
 }
 @keyframes slideIn {
   from { transform: translateX(100%); }
@@ -177,11 +184,48 @@ footer {
   text-decoration: none;
   color: white;
 }
+/* For tablets and smaller landscape screens */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+  .frosted-text {
+    font-size: 0.9em; /* Slightly smaller text */
+  }
+}
 @media (max-width: 768px) { 
-    #slideshow img {
-        width: 90vw; 
-    } 
-    section {
-        margin: 0 5%; 
-    }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+  }
+}
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 column on phones */
+  }
+  header nav h1 {
+    font-size: 1.2em; /* Slightly smaller heading */
+  }
+}
+/* Styles for landscape orientation */
+@media (orientation: landscape) { 
+  .carousel {
+    height: 300px; /* Adjust carousel height in landscape */
+  }
+  .frosted-text {
+    bottom: 40px; /* More space at the bottom */
+    font-size: 1.2em; /* Slightly larger text */
+  }
+}/* For larger desktop screens */
+@media (min-width: 1200px) { 
+  .services-grid {
+    grid-template-columns: repeat(5, 1fr); /* Keep 5 columns */
+  }
+  section {
+    margin: 0 20%; /* Wider content area */
+  }
+  #about p {
+    max-width: 60%; /* Adjust content width */
+  }
+}@media (min-width: 768px) and (orientation: landscape) {
+  /* Styles for tablets in landscape mode */
 }
