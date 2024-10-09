@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pro41vixpiga/public_html/
+    - /bin/cp -R /home/pro41vixpiga/repositories/RiverinaProtectionSecurity $DEPLOYPATH
