@@ -1,0 +1,11 @@
+user-agent: Googlebot
+crawl-delay: 5
+sitemap: https://www.riverinaprotectionsecurity.com.au/sitemap.xml
+disallow: /admin/
+disallow: /login/
+disallow: /Rates.html
+
+user-agent: *
+disallow: /admin/
+disallow: /login/
+disallow: /Rates.html
