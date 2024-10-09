@@ -55,7 +55,7 @@ section {
   list-style-type: none;
   padding: 15px;
   background-color: #222;
-  border-radius: 5px; 
+  border-radius: 10px; 
   text-align: center;     /* Center the text within each grid item */
 }
 .services-grid > div > ul {  /* Target the ul within each grid item */
@@ -138,7 +138,7 @@ section {
   padding: 15px 25px;
   background-color: rgba(255, 255, 255, 0.4); /* Frosted background */
   backdrop-filter: blur(10px); /* Adjust blur intensity */
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
 .carousel-item.active {
